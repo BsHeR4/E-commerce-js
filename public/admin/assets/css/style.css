@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.whiteSpacing {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+.button {
+    background-color: #EED6C4;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: none;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    color: #6B4F4F;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #d8beab;
+}
+
+.button:active {
+    background-color: #c1a693;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: fixed;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #6B4F4F;
+
+    h1 {
+        color: #EED6C4;
+    }
+
+    div {
+        display: flex;
+        gap: 10px;
+    }
+
+}
+
+.productsList {
+    height: 100vh;
+    padding-top: 74.4px;
+
+    .productsTable {
+        width: 100%;
+
+        tr {
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+        }
+
+        td {
+            text-align: center;
+        }
+
+    }
+}
+
+tr {
+    padding: 15px;
+    border-bottom: 2px solid #d8beab;
+}
+
+tr:hover {
+    background-color: #FFF3E4;
+}
+
+
+
+.addProductForm {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    form {
+        width: 30%;
+    }
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 40px;
+
+    .button {
+        max-width: max-content;
+    }
+}
+
+input,
+select {
+    height: 40px;
+    border-radius: 6px;
+    padding: 0 14px;
+}
+
+input {
+    padding: 14px;
+}

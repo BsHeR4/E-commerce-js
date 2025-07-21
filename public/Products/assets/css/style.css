@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.whiteSpacing {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: fixed;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #6B4F4F;
+
+    h1 {
+        color: #EED6C4;
+    }
+
+    a {
+        background-color: #EED6C4;
+        padding: 8px 10px;
+        border-radius: 6px;
+        border: none;
+        transition: all 0.2s ease-out;
+        cursor: pointer;
+        color: #6B4F4F;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: #d8beab;
+    }
+
+    a:active {
+        background-color: #c1a693;
+    }
+
+
+}
+
+/* Start Hero */
+
+.hero {
+    height: 100vh;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EED6C4;
+
+    >h2 {
+        align-self: flex-start;
+        color: #6B4F4F;
+        font-size: 42px;
+        letter-spacing: 4px;
+    }
+}
+
+/* End Hero */
+
+/* Start Slider */
+
+.slider {
+    display: flex;
+    width: 100%;
+    gap: 25px;
+    overflow: hidden;
+    position: relative;
+    color: #6B4F4F;
+
+    .arrows {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 100%;
+
+        .arrowButton {
+            position: relative;
+            top: 50%;
+            height: 100%;
+            width: 2%;
+            transform: translateY(-50%);
+            padding: 3px;
+            transition: all 0.2s ease-in-out;
+            color: #6b4f4f9f;
+            cursor: pointer;
+        }
+
+        .arrowButton:hover {
+            position: relative;
+            top: 50%;
+            height: 100%;
+            width: 2%;
+            transform: translateY(-50%);
+            background-color: #6b4f4f42;
+            padding: 3px;
+        }
+    }
+}
+
+.indecators {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    max-width: calc(((18px + (15px * 2)) * 7));
+
+    .point {
+        min-width: 16px;
+        min-height: 16px;
+        border: 2px solid #6B4F4F;
+        border-radius: 50%;
+        transition: all 0.6s ease-in-out;
+        cursor: pointer;
+    }
+
+    .active {
+        background-color: #6B4F4F;
+        min-width: 21px;
+        min-height: 21px;
+    }
+}
+
+.card {
+    padding: 30px;
+    border: 2px solid #6B4F4F;
+    background-color: #FFF3E4;
+    height: 200px;
+    min-width: calc(((100% - (25px * 2))) / 3);
+    height: 400px;
+    transition: all 0.6s ease-in-out;
+
+    img {
+        padding-bottom: 15px;
+        width: 100%;
+        height: 70%;
+    }
+
+    h2 {
+        padding-bottom: 10px;
+        color: #483434;
+
+        span {
+            color: #6b4f4fa6;
+        }
+    }
+
+    p {
+        padding-bottom: 50px;
+        color: #6b4f4fcf;
+    }
+}
+
+/* End Slider */
+
+
+
+/* Start Filter */
+.activeFilter {
+    padding: 5px;
+    border: 2px solid #6b4f4fbe;
+    border-radius: 3px;
+    background-color: #c1a69353;
+}
+
+.filter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    form {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+
+        #searchByName {
+            width: 300px;
+            padding: 15px;
+            border: 2px solid #6b4f4fbe;
+            border-radius: 4px;
+        }
+        
+        #searchByName:focus{
+            outline: none;
+            border: 2px solid #6B4F4F;
+        }
+
+        #searchedCategory {
+            width: 200px;
+            padding: 15px;
+            border: 2px solid #6b4f4fbe;
+            border-radius: 4px;
+        }
+
+    }
+}
+
+.filtterButton {
+    width: max-content;
+    padding: 5px 15px;
+    background-color: #6B4F4F;
+    color: #EED6C4;
+    border: 2px solid #EED6C4;
+}
+
+/* End Filter */
